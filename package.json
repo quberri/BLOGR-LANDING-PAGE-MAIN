@@ -1,10 +1,11 @@
 {
   "name": "blogr-landing-page-main",
   "version": "1.0.0",
-  "description": "![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
+  "description": "This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i ./styles/style.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./styles/style.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/quberri/BLOGR-LANDING-PAGE-MAIN/issues"
   },
-  "homepage": "https://github.com/quberri/BLOGR-LANDING-PAGE-MAIN#readme"
+  "homepage": "https://github.com/quberri/BLOGR-LANDING-PAGE-MAIN#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
 }
